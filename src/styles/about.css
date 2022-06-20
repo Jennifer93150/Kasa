@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+.banner-about{
+    border-radius: 25px;
+    filter: brightness(80%);
+    height: 100%;
+    max-width: 100%;
+} 
+
+.wrapper-collapse-about{
+    margin: auto;
+    width: 80%;
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media screen and (max-width: 1024px) { 
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 425px) { 
+    .about-mobile{
+        margin: -60px auto 30px auto;
+        width: 100%;
+    }
+    
+    .banner-container{
+        height: 223px;
+        margin-bottom: 40px;  
+    }
+
+    .banner-about{
+        object-fit: cover;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+@media screen and (max-width: 320px) {
+    
+}

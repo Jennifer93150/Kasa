@@ -1,0 +1,64 @@
+.Header-top{
+    display: flex;
+        justify-content: space-between;
+}
+
+/* NAVBAR */
+.Header-nav{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+    text-align: end;
+}
+
+/* LIENS */
+.Header-link{
+    color: #FF6060;
+    font-size: 24px;
+    margin: 0 0 0 40px;
+    text-decoration: none;
+}
+.Header-link:hover{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media screen and (max-width: 1024px) { 
+    .Header-logo{
+        width: 20%
+    }
+    /* LIENS */
+    .Header-link{
+        font-size: 20px;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) { 
+    /* LIENS */
+    .Header-link{
+        font-size: 18px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 425px) { 
+    .Header-logo{
+        width: 40%
+    }
+    /* LIENS */
+    .Header-link{
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    /* LIENS */
+    .Header-link{
+        font-size: 12px;
+    }
+}

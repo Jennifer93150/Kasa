@@ -1,0 +1,97 @@
+/* CONTENEUR Banniere */
+.banner-container{
+    height: 220px;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+/* BANNIERE */
+.banner{
+    border-radius: 25px;
+    filter: brightness(50%);
+    max-width: 100%;
+    height: 100%;
+}
+
+/* TEXTE SUR BANNIERE */
+.banner-text{
+    color: #FFFFFF;
+    font-size: 38px;
+    position: absolute;
+        top: 30%;
+        left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media screen and (max-width: 1024px) { 
+    /* conteneur banniere*/
+    .banner-container{
+        height: 190px;
+    }
+    /* TEXTE SUR banniere */
+    .banner-text{
+        font-size: 28px;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) { 
+    /* conteneur banner*/
+    .banner-container{
+        height: 150px;
+    }
+    /* TEXTE SUR banniere */
+    .banner-text{
+        font-size: 24px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 425px) { 
+    /* CONTENEUR banniere */
+    .banner-container{
+        height: 120px;
+        top: 18px;
+    }
+    /* Bnniere */
+    .banner{
+        border-radius: 10px;
+        height: 70%;
+    }
+    /* TEXTE SUR banniere */
+    .banner-text{
+        font-size: 24px;
+        text-align: left;
+        left: 35.6%;
+        right: 39.53%;
+        top: 14.04%;
+        bottom: 80.05%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* TEXTE SUR IMAGE */
+    .banner-text{
+        left: 40.6%;
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    /* CONTENEUR IMAGE */
+    .banner-container{
+        height: 100px;
+    }
+    /* TEXTE SUR IMAGE */
+    .banner-text{
+        font-size: 20px;
+        left: 40.6%;
+        width: 68%;
+    }
+}
