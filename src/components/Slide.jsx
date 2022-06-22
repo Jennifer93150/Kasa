@@ -24,12 +24,13 @@ function Slide(props) {
             setSlideIndex(props.picture.length)
         }
     }
-
+    console.log(slideIndex)
     return (
         <div className="container-slider">
             {props.picture.map((obj, index) =>
+            
                 <div key={`${obj}-${index}`} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                    <img src={obj}/>
+                    <img src={obj} alt={obj}/>
                 </div>
             )}
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
