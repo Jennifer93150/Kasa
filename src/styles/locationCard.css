@@ -8,6 +8,9 @@
 }
 
 .location-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     color: #FFFFFF;
     display: flex;

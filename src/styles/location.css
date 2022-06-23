@@ -81,6 +81,9 @@
     .wrapper-infos{
         flex-direction: column;
     }
+    .title{
+        font-size: 18px;
+    }
     .tag{
         border-radius: 5px;
         font-size: 10px;

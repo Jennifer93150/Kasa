@@ -6,7 +6,7 @@ import '../styles/slide.css'
 function Slide(props) {
     
   const [slideIndex, setSlideIndex] = useState(1)
-
+  
     const nextSlide = () => {
         if(slideIndex !== props.picture.length){
             setSlideIndex(slideIndex + 1)
@@ -24,7 +24,7 @@ function Slide(props) {
             setSlideIndex(props.picture.length)
         }
     }
-    console.log(slideIndex)
+    
     return (
         <div className="container-slider">
             {props.picture.map((obj, index) =>
@@ -33,8 +33,9 @@ function Slide(props) {
                     <img src={obj} alt={obj}/>
                 </div>
             )}
-            <BtnSlider moveSlide={nextSlide} direction={"next"} />
-            <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
+            
+            <BtnSlider moveSlide={nextSlide} direction={"next"} numberPictures={props.picture.length}/>
+            <BtnSlider moveSlide={prevSlide} direction={"prev"} numberPictures={props.picture.length}/>
             <div className={'slideshow-idx'}>{slideIndex} / {props.picture.length}</div>
         </div>
     )
